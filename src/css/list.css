@@ -1,5 +1,7 @@
 .list {
     max-width: 200px;
+    display: flex;
+    align-items: center;
 }
 
 .list .pokemon {
