@@ -4,16 +4,28 @@ body {
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center center;
+    background-position: center 30px;
     font-size: 20px;
 }
 
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: -50px;
+}
+
+header {
+    height: 100px;
+}
+
+.title {
+    top: 5px;
+    position: relative;
+    height: 60px;
+    left: 50px;
 }
 
 .pokedex {
