@@ -41,10 +41,11 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
-    padding: 80px 30px 50px;
+    padding: 80px 30px 20px;
     margin-top: -70px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    max-height: 300px;
 }
 
 .card-pokemon .card-info h3 {
@@ -56,6 +57,11 @@
 .card-pokemon .card-info .stats {
     padding: 0 10px;
     width: 180px;
+}
+
+.card-pokemon .card-info .skills {
+    width: 180px;
+    padding: 0 10px;
 }
 
 .card-pokemon .card-info .skills ul li, .card-pokemon .card-info .stats ul li {
