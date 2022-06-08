@@ -1,78 +1,78 @@
 
 // Pokemon 01
-var name1 = "Pikachu";
-var number1 = "#001";
-var type1 = "eletric";
-var hp1 = "300";
-var atk1 = "600";
-var def1 = "500";
-var spd1 = "300";
-var tot1 = "1700";
-var hab101 = "Choque do trovão";
-var hab102 = "Cabeçada";
-var image1 = "pikachu";
+var pkmn1 = {
+name:   "Pikachu",
+number: "#001",
+type:   "eletric",
+hp:     "300",
+atk:    "600",
+def:    "500",
+spd:    "300",
+tot:    "1700",
+hab1:   "Choque do trovão",
+hab2:   "Cabeçada"};
 
 // Pokemon 02
-var name2 = "Bulbasaur";
-var number2 = "#002";
-var type2 = "grass";
-var hp2 = "320";
-var atk2 = "510";
-var def2 = "400";
-var spd2 = "200";
-var tot2 = "1430";
-var hab201 = "Folha navalha";
-var hab202 = "Raio solar";
-var image2 = "bulbasaur";
+var pkmn2 = {
+name:   "Bulbasaur",
+number: "#002",
+type:   "grass",
+hp:     "320",
+atk:    "510",
+def:    "400",
+spd:    "200",
+tot:    "1430",
+hab1:   "Folha navalha",
+hab2:   "Raio solar"};
 
 // Pokemon 03
-var name3 = "Charmander";
-var number3 = "#003";
-var type3 = "fire";
-var hp3 = "200";
-var atk3 = "300";
-var def3 = "400";
-var spd3 = "320";
-var tot3 = "1200";
-var hab301 = "Lança chamas";
-var hab302 = "Cabeçada";
-var image3 = "charmander";
+var pkmn3 = {
+name:   "Charmander",
+number: "#003",
+type:   "fire",
+hp:     "200",
+atk:    "300",
+def:    "400",
+spd:    "320",
+tot:    "1200",
+hab1:   "Lança chamas",
+hab2:   "Cabeçada"};
 
 // Pokemon 04
-var name4 = "Gengar";
-var number4 = "#013";
-var type4 = "darkness";
-var hp4 = "100";
-var atk4 = "200";
-var def4 = "300";
-var spd4 = "400";
-var tot4 = "1000";
-var hab401 = "Bola sombria";
-var hab402 = "Lambida";
-var image4 = "gengar";
+var pkmn4 = {
+name:   "Gengar",
+number: "#013",
+type:   "darkness",
+hp:     "100",
+atk:    "200",
+def:    "300",
+spd:    "400",
+tot:    "1000",
+hab1:   "Bola sombria",
+hab2:   "Lambida"};
 
 // Pokemon 05
-var name5 = "Gyarados";
-var number5 = "#022";
-var type5 = "aquatic";
-var hp5 = "300";
-var atk5 = "600";
-var def5 = "500";
-var spd5 = "300";
-var tot5 = "1700";
-var hab501 = "Jato d'Água";
-var hab502 = "Hidro bomba";
-var image5 = "gyarados";
+var pkmn5 = {
+name:   "Gyarados",
+number: "#022",
+type:   "aquatic",
+hp:     "300",
+atk:    "600",
+def:    "500",
+spd:    "300",
+tot:    "1700",
+hab1:   "Jato d'Água",
+hab2:   "Hidro bomba"};
 
 // Pokemon 06
-var name6 = "Dragonite";
-var number6 = "#062";
-var type6 = "dragon";
-var hp6 = "500";
-var atk6 = "600";
-var def6 = "400";
-var spd6 = "400";
-var tot6 = "1900";
-var hab601 = "Dança do dragão";
-var hab602 = "Velocidade extrema";
-var image6 = "dragonite";
+var pkmn6 = {
+name:   "Dragonite",
+number: "#062",
+type:   "dragon",
+hp:     "500",
+atk:    "600",
+def:    "400",
+spd:    "400",
+tot:    "1900",
+hab1:   "Dança do dragão",
+hab2:   "Velocidade extrema"};
