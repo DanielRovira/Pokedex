@@ -21,9 +21,8 @@ document.querySelector('.hp').textContent = pkmn.hp;
 document.querySelector('.atk').textContent = pkmn.atk;
 document.querySelector('.def').textContent = pkmn.def;
 document.querySelector('.spd').textContent = pkmn.spd;
-document.querySelector('.tot').textContent = pkmn.tot;
 document.querySelector('.habA').textContent = pkmn.hab1;
-document.querySelector('.habB').textContent = pkmn.hab1;
+document.querySelector('.habB').textContent = pkmn.hab2;
 document.querySelector('.image').src = `src/images/${pkmn.name}.png`;
 document.getElementById('card').removeAttribute('class')
 document.getElementById('card').classList.add('card-pokemon' , pkmn.type);  };

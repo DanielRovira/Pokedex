@@ -18,10 +18,12 @@
 </head>
 <body>
     <main>
+        <div class="container">
         <header>
             <img class="title" src="./src/images/pokedex.png" alt="Title">
         </header>
         <div class="pokedex">
+            <div class="arrow"></div>
             <nav class="list">
                 <ul>
                     <li class="pokemon active" id="pkmn1">
@@ -50,7 +52,7 @@
                     </li>
                 </ul>
             </nav>
-
+            <div class="sep"></div>
             <div class="cards-pokemon">
                 <div class="card-pokemon eletric" id="card">
                     <div class="card-top">
@@ -75,7 +77,6 @@
                                 <li><span>Attack: </span><span class="atk"></span></li>
                                 <li><span>Deffense: </span><span class="def"></span></li>
                                 <li><span>Speed: </span><span class="spd"></span></li>
-                                <li><span>Total: </span><span class="tot"></span></li>
                             </ul>
                         </div>
 
@@ -91,6 +92,8 @@
                 </div>
             </div>
         </div>
+        <footer></footer>
+    </div>
     </main>
     <script src="./src/js/pokemons.js"></script>
     <script src="./src/js/index.js"></script>
