@@ -101,6 +101,14 @@
         font-size: 12px;
     }
 
+    .card-pokemon .card-info .stats {
+        padding: 0 5px;
+    }
+    
+    .card-pokemon .card-info .skills {
+        padding: 0 5px;
+    }
+
     .card-pokemon .card-info .skills ul li, .card-pokemon .card-info .stats ul li {
         border-bottom: 1px solid white;
         padding: 0 0 0;
