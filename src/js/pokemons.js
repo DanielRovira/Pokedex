@@ -1,3 +1,11 @@
+var listNames = {
+pkmn1: 'Pikachu',
+pkmn2: 'Bulbasaur',
+pkmn3: 'Charmander',
+pkmn4: 'Gengar',
+pkmn5: 'Gyarados',
+pkmn6: 'Dragonite'
+}
 
 // Pokemon 01
 var pkmn1 = {

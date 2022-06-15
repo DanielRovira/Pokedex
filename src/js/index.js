@@ -1,16 +1,11 @@
-//List attributes
-document.querySelector('.nameA').textContent = pkmn1.name;
-document.querySelector('.nameB').textContent = pkmn2.name;
-document.querySelector('.nameC').textContent = pkmn3.name;
-document.querySelector('.nameD').textContent = pkmn4.name;
-document.querySelector('.nameE').textContent = pkmn5.name;
-document.querySelector('.nameF').textContent = pkmn6.name;
-document.querySelector('.imageA').src = `src/images/head-${pkmn1.name}.png`;
-document.querySelector('.imageB').src = `src/images/head-${pkmn2.name}.png`;
-document.querySelector('.imageC').src = `src/images/head-${pkmn3.name}.png`;
-document.querySelector('.imageD').src = `src/images/head-${pkmn4.name}.png`;
-document.querySelector('.imageE').src = `src/images/head-${pkmn5.name}.png`;
-document.querySelector('.imageF').src = `src/images/head-${pkmn6.name}.png`;
+const listSelect = document.querySelectorAll('.pokemon')
+
+//List names and image
+listSelect.forEach((pokemon) => {
+    let idSelected = pokemon.attributes.id.value
+    pokemon.querySelector('.listName').textContent = listNames[idSelected];
+    pokemon.querySelector('.listImage').src = `src/images/head-${listNames[idSelected]}.png`;
+})
 
 //Default
 function pokemon (pkmn) {
@@ -28,7 +23,7 @@ document.getElementById('card').removeAttribute('class')
 document.getElementById('card').classList.add('card-pokemon' , pkmn.type);  };
 pokemon(pkmn1)
 
-const listSelect = document.querySelectorAll('.pokemon')
+
 
 listSelect.forEach((selected) => {
     selected.addEventListener('mouseenter', () => {
