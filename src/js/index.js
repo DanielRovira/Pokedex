@@ -4,8 +4,8 @@ const pkmnAtt = document.querySelectorAll('.pkmnAtt')
 //List names and image
 listSelect.forEach((pokemon) => {
     let idSelected = pokemon.attributes.id.value
-    pokemon.querySelector('.listName').textContent = listNames[idSelected];
-    pokemon.querySelector('.listImage').src = `src/images/head-${listNames[idSelected]}.png`;
+    pokemon.querySelector('.listName').textContent = listNames[idSelected].name;
+    pokemon.querySelector('.listImage').src = `src/images/head-${listNames[idSelected].name}.png`;
 })
 
 //Default
@@ -14,13 +14,14 @@ function pokemon (pkmn) {
     pkmnAtt.forEach((poke) => {
         let idSelected = poke.attributes.id.value
         poke.textContent = pkmn[idSelected]
+
     })
-        document.getElementById('image').src = `./src/images/${pkmn.name}.png`
+        document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`
         document.getElementById('card').removeAttribute('class')
-        document.getElementById('card').classList.add('card-pokemon' , pkmn.type);
+        document.getElementById('card').classList.add('card-pokemon' , listNames[idSelected].type);
 }
 
-pokemon(pkmn1) 
+
 
 listSelect.forEach((selected) => {
     selected.addEventListener('mouseenter', () => {
@@ -29,7 +30,10 @@ listSelect.forEach((selected) => {
         const listSelected = document.getElementById(idSelected)
         activeOnList.classList.remove('active')
         listSelected.classList.add('active')
-        switch (idSelected){
+        
+        return pokemon(listNames[idSelected])
+        console.log();
+ /*       switch (idSelected){
             case "pkmn1":;
                 pokemon(pkmn1); 
             break;
@@ -47,6 +51,6 @@ listSelect.forEach((selected) => {
             break;
             case "pkmn6":
                 pokemon(pkmn6);
-        }
+        }  */
     })
  })
