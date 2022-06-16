@@ -1,4 +1,5 @@
 const listSelect = document.querySelectorAll('.pokemon')
+const pkmnAtt = document.querySelectorAll('.pkmnAtt')
 
 //List names and image
 listSelect.forEach((pokemon) => {
@@ -9,21 +10,17 @@ listSelect.forEach((pokemon) => {
 
 //Default
 function pokemon (pkmn) {
-document.querySelector('.name').textContent = pkmn.name;
-document.querySelector('.number').textContent = pkmn.number;
-document.querySelector('.type').textContent = pkmn.type;
-document.querySelector('.hp').textContent = pkmn.hp;
-document.querySelector('.atk').textContent = pkmn.atk;
-document.querySelector('.def').textContent = pkmn.def;
-document.querySelector('.spd').textContent = pkmn.spd;
-document.querySelector('.habA').textContent = pkmn.hab1;
-document.querySelector('.habB').textContent = pkmn.hab2;
-document.querySelector('.image').src = `src/images/${pkmn.name}.png`;
-document.getElementById('card').removeAttribute('class')
-document.getElementById('card').classList.add('card-pokemon' , pkmn.type);  };
-pokemon(pkmn1)
+    
+    pkmnAtt.forEach((poke) => {
+        let idSelected = poke.attributes.id.value
+        poke.textContent = pkmn[idSelected]
+    })
+        document.getElementById('image').src = `./src/images/${pkmn.name}.png`
+        document.getElementById('card').removeAttribute('class')
+        document.getElementById('card').classList.add('card-pokemon' , pkmn.type);
+}
 
-
+pokemon(pkmn1) 
 
 listSelect.forEach((selected) => {
     selected.addEventListener('mouseenter', () => {
