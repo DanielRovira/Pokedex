@@ -16,12 +16,7 @@ function pokemon (pkmn) {
         poke.textContent = pkmn[idSelected]
 
     })
-        document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`
-        document.getElementById('card').removeAttribute('class')
-        document.getElementById('card').classList.add('card-pokemon' , listNames[idSelected].type);
 }
-
-
 
 listSelect.forEach((selected) => {
     selected.addEventListener('mouseenter', () => {
@@ -31,26 +26,15 @@ listSelect.forEach((selected) => {
         activeOnList.classList.remove('active')
         listSelected.classList.add('active')
         
-        return pokemon(listNames[idSelected])
-        console.log();
- /*       switch (idSelected){
-            case "pkmn1":;
-                pokemon(pkmn1); 
-            break;
-            case "pkmn2":
-                pokemon(pkmn2);
-            break;
-            case "pkmn3":
-                pokemon(pkmn3);
-            break;
-            case "pkmn4":
-                pokemon(pkmn4);
-            break;
-            case "pkmn5":
-                pokemon(pkmn5);
-            break;
-            case "pkmn6":
-                pokemon(pkmn6);
-        }  */
-    })
+        document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`
+
+        document.getElementById('card').removeAttribute('class')
+        document.getElementById('card').classList.add('card-pokemon' , listNames[idSelected].type);
+
+
+        pokemon(listNames[idSelected])
+        console.log(listNames[idSelected].name);
  })
+})
+
+    pokemon(listNames.pkmn1)
