@@ -1,5 +1,6 @@
 const listSelect = document.querySelectorAll('.pokemon')
 const pkmnAtt = document.querySelectorAll('.pkmnAtt')
+document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`
 
 //List names and image
 listSelect.forEach((pokemon) => {
@@ -10,11 +11,9 @@ listSelect.forEach((pokemon) => {
 
 //Default
 function pokemon (pkmn) {
-    
     pkmnAtt.forEach((poke) => {
         let idSelected = poke.attributes.id.value
         poke.textContent = pkmn[idSelected]
-
     })
 }
 
@@ -25,16 +24,10 @@ listSelect.forEach((selected) => {
         const listSelected = document.getElementById(idSelected)
         activeOnList.classList.remove('active')
         listSelected.classList.add('active')
-        
         document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`
-
         document.getElementById('card').removeAttribute('class')
-        document.getElementById('card').classList.add('card-pokemon' , listNames[idSelected].type);
-
-
+        document.getElementById('card').classList.add('card-pokemon' , listNames[idSelected].type)
         pokemon(listNames[idSelected])
-        console.log(listNames[idSelected].name);
  })
 })
-
-    pokemon(listNames.pkmn1)
+pokemon(listNames.pkmn1)
