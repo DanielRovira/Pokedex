@@ -56,7 +56,7 @@ header {
 .sep {
     margin: auto;
     height: 10vh;
-    border: 1px dashed rgba(255, 255, 0, 0.5);
+    border-left: 2px dashed rgba(255, 255, 0, 0.5);
 }
 
 footer {
