@@ -1,16 +1,16 @@
 const listSelect = document.querySelectorAll('.pokemon')
 const pkmnAtt = document.querySelectorAll('.pkmnAtt')
-document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`
 
 //List names and image
 listSelect.forEach((pokemon) => {
     let idSelected = pokemon.attributes.id.value
     pokemon.querySelector('.listName').textContent = listNames[idSelected].name;
-    pokemon.querySelector('.listImage').src = `src/images/${listNames[idSelected].name}.png`;
-    pokemon.querySelector('.listImage').src = `src/images/head-${listNames[idSelected].name}.png`;
+    document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`;
+    pokemon.querySelector('.listImage').src = `./src/images/head-${listNames[idSelected].name}.png`;
 })
 
 //Default
+document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`
 function pokemon (pkmn) {
     pkmnAtt.forEach((poke) => {
         let idSelected = poke.attributes.id.value
