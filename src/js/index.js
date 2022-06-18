@@ -8,16 +8,17 @@ function pokemon (pkmn) {
     })
 }
 
-listSelect.forEach((selected) => {
+listSelect.forEach((selected, i) => {
     let idSelected = selected.attributes.id.value
+    
     selected.querySelector('.listName').textContent = listNames[idSelected].name;
-    document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`;
-    pokemon(listNames[idSelected])
     selected.querySelector('.listImage').src = `./src/images/head-${listNames[idSelected].name}.png`;
 
+    setTimeout(() => {
+    document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`;
+    }, i * 1)
     
     selected.addEventListener('mouseenter', () => {
-    //    const idSelected = selected.attributes.id.value
         const activeOnList = document.querySelector('.active')
         const listSelected = document.getElementById(idSelected)
         activeOnList.classList.remove('active')
@@ -28,5 +29,9 @@ listSelect.forEach((selected) => {
         pokemon(listNames[idSelected])
  })
 })
-document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`
-pokemon(listNames.pkmn1)
+
+setTimeout(() => {
+
+    document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`;
+    pokemon(listNames.pkmn1);
+}, 10)
