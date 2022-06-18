@@ -27,11 +27,10 @@ listSelect.forEach((selected, i) => {
         document.getElementById('card').removeAttribute('class')
         document.getElementById('card').classList.add('card-pokemon' , listNames[idSelected].type)
         pokemon(listNames[idSelected])
- })
+    })
 })
 
 setTimeout(() => {
-
     document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`;
     pokemon(listNames.pkmn1);
 }, 10)
