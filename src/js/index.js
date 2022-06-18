@@ -16,7 +16,7 @@ listSelect.forEach((selected, i) => {
 
     setTimeout(() => {
     document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`;
-    }, i * 1)
+    }, i * 100)
     
     selected.addEventListener('mouseenter', () => {
         const activeOnList = document.querySelector('.active')
@@ -33,4 +33,4 @@ listSelect.forEach((selected, i) => {
 setTimeout(() => {
     document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`;
     pokemon(listNames.pkmn1);
-}, 10)
+}, 700)

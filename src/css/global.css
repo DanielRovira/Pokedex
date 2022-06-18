@@ -2,7 +2,7 @@ body {
     background-color: #d7253d56;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    animation: fadeInOpacity .3s ease-out;
+    animation: fadeInOpacity 1s ease-out;
     animation-fill-mode: backwards;
     animation-delay: .1s;
 }
