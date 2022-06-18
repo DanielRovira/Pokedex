@@ -6,6 +6,7 @@ document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png
 listSelect.forEach((pokemon) => {
     let idSelected = pokemon.attributes.id.value
     pokemon.querySelector('.listName').textContent = listNames[idSelected].name;
+    pokemon.querySelector('.listImage').src = `src/images/head-${listNames[idSelected].name}.jpg`;
     pokemon.querySelector('.listImage').src = `src/images/head-${listNames[idSelected].name}.png`;
 })
 
