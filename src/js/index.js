@@ -2,12 +2,6 @@ const listSelect = document.querySelectorAll('.pokemon')
 const pkmnAtt = document.querySelectorAll('.pkmnAtt')
 
 //List names and image
-listSelect.forEach((pokemon) => {
-    let idSelected = pokemon.attributes.id.value
-    pokemon.querySelector('.listName').textContent = listNames[idSelected].name;
-    document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`;
-    pokemon.querySelector('.listImage').src = `./src/images/head-${listNames[idSelected].name}.png`;
-})
 
 //Default
 document.getElementById('image').src = `./src/images/${listNames.pkmn1.name}.png`
@@ -32,3 +26,12 @@ listSelect.forEach((selected) => {
  })
 })
 pokemon(listNames.pkmn1)
+
+
+listSelect.forEach((selected) => {
+    let idSelected = selected.attributes.id.value
+    selected.querySelector('.listName').textContent = listNames[idSelected].name;
+//    document.getElementById('image').src = `./src/images/${listNames[idSelected].name}.png`;
+    pokemon(listNames[idSelected])
+    selected.querySelector('.listImage').src = `./src/images/head-${listNames[idSelected].name}.png`;
+})
